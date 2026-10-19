@@ -1,0 +1,24 @@
+{
+  "name": "agentoptic",
+  "version": "0.0.1",
+  "description": "Per-task cost and outcome ledger for multi-agent coding sessions (Claude Code, Codex). Local-first CLI.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "agentoptic": "./dist/cli/index.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "bun run src/cli/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src",
+    "lint:fix": "biome check --write src",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.0",
+    "@types/bun": "latest",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

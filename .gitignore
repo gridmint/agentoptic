@@ -1,0 +1,10 @@
+node_modules/
+dist/
+bun.lock
+*.sqlite
+*.sqlite-*
+.env
+.DS_Store
+.serena/
+.claude/
+.agentoptic/
